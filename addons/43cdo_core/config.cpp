@@ -72,4 +72,12 @@ class CfgEditorSubcategories
     {
         displayName = "[43CDO] Cars";
     };
+    class 43cdo_faction_edsubcat_carsdesert
+    {
+        displayName = "[43CDO] Cars (Desert)";
+    };
+    class 43cdo_faction_edsubcat_carswoodland
+    {
+        displayName = "[43CDO] Cars (Woodland)";
+    };
 };
