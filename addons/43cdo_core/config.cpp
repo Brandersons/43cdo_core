@@ -76,8 +76,36 @@ class CfgEditorSubcategories
     {
         displayName = "[43CDO] Cars (Desert)";
     };
+    class 43cdo_faction_edsubcat_carsgreen
+    {
+        displayName = "[43CDO] Cars (Green)";
+    };
     class 43cdo_faction_edsubcat_carswoodland
     {
         displayName = "[43CDO] Cars (Woodland)";
+    };
+    class 43cdo_faction_edsubcat_jackaldesert
+    {
+        displayName = "[43CDO] Jackals (Desert)";
+    };
+    class 43cdo_faction_edsubcat_jackalgreen
+    {
+        displayName = "[43CDO] Jackals (Green)";
+    };
+    class 43cdo_faction_edsubcat_jackalwoodland
+    {
+        displayName = "[43CDO] Jackals (Woodland)";
+    };
+    class 43cdo_faction_edsubcat_coyotedesert
+    {
+        displayName = "[43CDO] Coyotes (Desert)";
+    };
+    class 43cdo_faction_edsubcat_coyotegreen
+    {
+        displayName = "[43CDO] Coyotes (Green)";
+    };
+    class 43cdo_faction_edsubcat_coyotewoodland
+    {
+        displayName = "[43CDO] Coyotes (Woodland)";
     };
 };

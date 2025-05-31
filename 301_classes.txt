@@ -1,0 +1,853 @@
+// 301 A/B Jackals and Coyotes
+    class 43cdo_vehicles_jackal_hmg_d_301ab : 43cdo_vehicles_jackal_hmg_base
+    {
+        displayName = "(301 A/B) Jackal HMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_jackaldesert";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    };
+    class 43cdo_vehicles_jackal_hmg_g_301ab : 43cdo_vehicles_jackal_hmg_base
+    {
+        displayName = "(301 A/B) Jackal HMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_jackalgreen";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    };
+    class 43cdo_vehicles_jackal_hmg_w_301ab : 43cdo_vehicles_jackal_hmg_base
+    {
+        displayName = "(301 A/B) Jackal HMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_jackalwoodland";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    };
+    class 43cdo_vehicles_jackal_gmg_d_301ab : 43cdo_vehicles_jackal_gmg_base
+    {
+        displayName = "(301 A/B) Jackal GMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_jackaldesert";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    };
+    class 43cdo_vehicles_jackal_gmg_g_301ab : 43cdo_vehicles_jackal_gmg_base
+    {
+        displayName = "(301 A/B) Jackal GMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_jackalgreen";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    };
+    class 43cdo_vehicles_jackal_gmg_w_301ab : 43cdo_vehicles_jackal_gmg_base
+    {
+        displayName = "(301 A/B) Jackal GMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_jackalwoodland";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    };
+    class 43cdo_vehicles_coyote_hmg_d_301ab : 43cdo_vehicles_coyote_hmg_base
+    {
+        displayName = "(301 A/B) Coyote HMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_coyotedesert";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    };
+    class 43cdo_vehicles_coyote_hmg_g_301ab : 43cdo_vehicles_coyote_hmg_base
+    {
+        displayName = "(301 A/B) Coyote HMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_coyotegreen";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    };
+    class 43cdo_vehicles_coyote_hmg_w_301ab : 43cdo_vehicles_coyote_hmg_base
+    {
+        displayName = "(301 A/B) Coyote HMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_coyotewoodland";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    };
+    class 43cdo_vehicles_coyote_gmg_d_301ab : 43cdo_vehicles_coyote_gmg_base
+    {
+        displayName = "(301 A/B) Coyote GMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_coyotedesert";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    };
+    class 43cdo_vehicles_coyote_gmg_g_301ab : 43cdo_vehicles_coyote_gmg_base
+    {
+        displayName = "(301 A/B) Coyote GMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_coyotegreen";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    };
+    class 43cdo_vehicles_coyote_gmg_w_301ab : 43cdo_vehicles_coyote_gmg_base
+    {
+        displayName = "(301 A/B) Coyote GMG";
+        scope = 2;
+        scopeCurator = 2;
+        editorSubcategory = "43cdo_faction_edsubcat_coyotewoodland";
+        hiddenSelectionsTextures[] =
+        {
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+            "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+            "",
+            "",
+            ""
+        };
+        class TextureSources
+        {
+            class Desert
+            {
+                displayName = "Desert";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_desert_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Green
+            {
+                displayName = "Green";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_green_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+            class Woodland
+            {
+                displayName = "Woodland";
+                author = "www.3commandobrigade.com";
+                textures[] =
+                {
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_301ab.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_mount_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_adds_generic.paa",
+                    "\43cdo_vehicles\data\jackal\43cdo_vehicles_jackal_woodland_bar_generic.paa",
+                    "",
+                    "",
+                    ""
+                };
+                factions[] = {};
+            };
+        };
+        class TransportItems {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+    }; 
