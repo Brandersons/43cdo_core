@@ -75,27 +75,6 @@ class RscDisplayMain: RscStandardDisplay
 		delete InfoVersion;
 		delete Footer;
 		delete InfoDLCsOwned;
-
-		// Teamspeak button
-		class tsButton: RscButton
-		{
-			idc = -1;
-			text = "43cdo_mainmenu\data\ts_ca.paa";
-			url = "ts3server://ts.43commando.co.uk";
-			tooltip = "Join Teamspeak";
-			style = 48;
-			colorBackground[] = {0,0,0,0};
-			colorFocused[] = {1,1,1,1};
-			colorText[] = {1,1,1,0.5};
-			h = "2 * (pixelH * pixelGrid * 2)";
-			x = "safezoneX + safezoneW - 4.1 * 2 * (pixelW * pixelGrid * 2)";
-			w = "4 * (pixelW * pixelGrid * 2)";
-			y = "safezoneY + 2 * (pixelH * pixelGrid * 2)";
-			onMouseEnter = "";
-			onSetFocus = "";
-			onMouseExit = "";
-			onKillFocus = "";
-		};
 	};
 };
 

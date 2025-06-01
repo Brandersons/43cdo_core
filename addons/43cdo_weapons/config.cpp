@@ -48,6 +48,122 @@ class CfgWeapons
             };
         };
     };
+
+    class 43cdo_weapons_l403a1_recce_marine : SCM_L403A1_Tan
+    {
+        displayName = "L403A1";
+        scope = 2;
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "SCM_Eleanor";
+            };
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "rhsusf_acc_anpeq15_wmx";
+            };
+            class LinkedItemsMuzzle
+            {
+                slot = "MuzzleSlot";
+                item = "SCM_PRT_Cover";
+            };
+            class LinkedItemsUnder
+            {
+                slot = "UnderBarrelSlot";
+                item = "rhs_acc_grip_rk6";
+            };
+        };
+    };
+
+    class 43cdo_weapons_l403a1_recce_delta : SCM_L403A1_Tan
+    {
+        displayName = "L403A1";
+        scope = 2;
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "SCM_Eleanor";
+            };
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "ACE_DBAL_A3_Green";
+            };
+            class LinkedItemsMuzzle
+            {
+                slot = "MuzzleSlot";
+                item = "SCM_PRT_Cover";
+            };
+            class LinkedItemsUnder
+            {
+                slot = "UnderBarrelSlot";
+                item = "rhs_acc_grip_rk6";
+            };
+        };
+    };
+
+    class UKSF_L129A2_65_Base;
+    class 43cdo_weapons_l129a2 : UKSF_L129A2_65_Base
+    {
+        displayName = "L129A2";
+        scope = 2;
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "RKSL_optic_PMII_312_sunshade";
+            };
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "";
+            };
+            class LinkedItemsMuzzle
+            {
+                slot = "MuzzleSlot";
+                item = "SCM_PRT_Cover";
+            };
+            class LinkedItemsUnder
+            {
+                slot = "UnderBarrelSlot";
+                item = "sps_atlas_bipod_m_blk";
+            };
+        };
+    };
+    class 43cdo_weapons_l129a2_recce : UKSF_L129A2_65_Base
+    {
+        displayName = "L129A2 Recce";
+        scope = 2;
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "kt_25x_PMII022_msr_ti";
+            };
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "";
+            };
+            class LinkedItemsMuzzle
+            {
+                slot = "MuzzleSlot";
+                item = "SCM_PRT_Cover";
+            };
+            class LinkedItemsUnder
+            {
+                slot = "UnderBarrelSlot";
+                item = "sps_atlas_bipod_m_blk";
+            };
+        };
+    };
 };
 
 class cfgVehicles
