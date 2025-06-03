@@ -180,8 +180,8 @@ class cfgVehicles
         class EventHandlers
         {
             init = "\
-            private _prop = _this select 0; \
-            _prop setDamage 1; _prop enableSimulation false; \
+                private _prop = _this select 0; \
+                _prop setDamage 1; _prop enableSimulation false; \
             ";
         };
     };

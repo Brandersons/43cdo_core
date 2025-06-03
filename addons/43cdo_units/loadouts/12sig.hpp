@@ -66,7 +66,8 @@ class 43cdo_units_soldier_12sig : 43cdo_units_soldier_base
             "ACE_MRE_BeefStew", "ACE_MRE_BeefStew",
             "kat_TXA", "kat_TXA"
         };
-        itemsvest[] = {
+        itemsvest[] =
+        {
             "ItemcTab",
             "ACE_RangeCard",
             "kt_25x_PMII022_msr_ti",
