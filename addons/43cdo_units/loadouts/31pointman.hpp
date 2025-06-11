@@ -1,6 +1,8 @@
 class 43cdo_units_soldier_31pointman : 43cdo_units_soldier_base
 {
     scope = 2;
+    scopeCurator = 2;
+    side = 1;
     displayName = "Pointman";
     editorSubcategory = "43cdo_faction_edsubcat_playersqm";
     aauthor = "Cpl. N. Monarch";

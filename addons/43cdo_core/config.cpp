@@ -5,7 +5,7 @@ class CfgPatches
 		name="[43CDO] Core";
 		author="LCpl. BT";
 		url="";
-		requiredAddons[]= 
+		requiredAddons[]=
 		{
 			"3DEN",
 			"A3_Characters_F",

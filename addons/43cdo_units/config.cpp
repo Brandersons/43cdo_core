@@ -6,9 +6,23 @@ class CfgPatches
         // if you want a unit to show up in zeus you've gotta add it here
         units[] =
         {
-            "43cdo_units_soldier_zeus",
+            "43cdo_units_soldier_12charlie",
+            "43cdo_units_soldier_12delta",
+            "43cdo_units_soldier_12hq",
+            "43cdo_units_soldier_12marine",
+            "43cdo_units_soldier_12marksman",
+            "43cdo_units_soldier_12sig",
+            "43cdo_units_soldier_31gpmg",
+            "43cdo_units_soldier_31hqa",
+            "43cdo_units_soldier_31hqb",
+            "43cdo_units_soldier_31marine",
+            "43cdo_units_soldier_31marksman",
+            "43cdo_units_soldier_31medic",
+            "43cdo_units_soldier_31pointman",
+            "43cdo_units_soldier_31sig",
             "43cdo_units_soldier_311ic",
-            "43cdo_units_soldier_medic"
+            "43cdo_units_soldier_312ic",
+            "43cdo_units_soldier_zeus"
         };
         // any weapons, helmets or vests equipped to any of the soldier classes
         weapons[] =
@@ -35,6 +49,7 @@ class CfgVehicles
     class 43cdo_units_soldier_base : B_Soldier_base_F
     {
         scope = 1;
+        side = 1;
         displayName = "43 Commando Base Soldier";
         faction = "43cdo_faction";
         editorSubcategory = "43cdo_faction_edsubcat_playersqm";
@@ -247,6 +262,7 @@ class CfgVehicles
     #include "\43cdo_units\loadouts\12marksman.hpp"
     #include "\43cdo_units\loadouts\12sig.hpp"
     #include "\43cdo_units\loadouts\31gpmg.hpp"
+    #include "\43cdo_units\loadouts\31hqa.hpp"
     #include "\43cdo_units\loadouts\31hqb.hpp"
     #include "\43cdo_units\loadouts\31marine.hpp"
     #include "\43cdo_units\loadouts\31marksman.hpp"
@@ -329,6 +345,7 @@ class CfgGroups {
 			        editorSubcategory = "43cdo_faction_edsubcat_infantry";
                     icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
                     side = 1;
+                    scope = 2;
 
                     class Unit0
                     {
@@ -340,14 +357,14 @@ class CfgGroups {
                     class Unit1
                     {
                         side = 1;
-                        vehicle = "43cdo_units_soldier_medic";
+                        vehicle = "43cdo_units_soldier_31pointman";
                         rank = "PRIVATE";
                         position[] = {0,-2,0};
                     };
                     class Unit2
                     {
                         side = 1;
-                        vehicle = "43cdo_units_soldier_medic";
+                        vehicle = "43cdo_units_soldier_31marine";
                         rank = "PRIVATE";
                         position[] = {0,-4,0};
                     };
@@ -361,14 +378,14 @@ class CfgGroups {
                     class Unit4
                     {
                         side = 1;
-                        vehicle = "43cdo_units_soldier_medic";
+                        vehicle = "43cdo_units_soldier_31medic";
                         rank = "PRIVATE";
                         position[] = {0,-8,0};
                     };
                     class Unit5
                     {
                         side = 1;
-                        vehicle = "43cdo_units_soldier_medic";
+                        vehicle = "43cdo_units_soldier_31marine";
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };

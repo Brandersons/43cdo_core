@@ -1,6 +1,8 @@
 class 43cdo_units_soldier_12sig : 43cdo_units_soldier_base
 {
     scope = 2;
+    scopeCurator = 2;
+    side = 1;
     displayName = "1-2 Sig";
     editorSubcategory = "43cdo_faction_edsubcat_playersqm";
     author = "Cpl. N. Monarch";
