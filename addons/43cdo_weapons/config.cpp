@@ -119,11 +119,6 @@ class CfgWeapons
                 slot = "CowsSlot";
                 item = "RKSL_optic_PMII_312_sunshade";
             };
-            class LinkedItemsAcc
-            {
-                slot = "PointerSlot";
-                item = "";
-            };
             class LinkedItemsMuzzle
             {
                 slot = "MuzzleSlot";
@@ -146,11 +141,6 @@ class CfgWeapons
             {
                 slot = "CowsSlot";
                 item = "kt_25x_PMII022_msr_ti";
-            };
-            class LinkedItemsAcc
-            {
-                slot = "PointerSlot";
-                item = "";
             };
             class LinkedItemsMuzzle
             {
