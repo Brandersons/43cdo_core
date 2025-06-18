@@ -26,6 +26,7 @@ class CfgPatches
 		requiredVersion= 0.01;
 		units[]=
         {
+			"43cdo_logistics_soldier_logi",
 			"43cdo_logistics_spawnpos",
 			"43cdo_logistics_box_suppliesinfantry",
             "43cdo_logistics_box_suppliesrecce",
@@ -49,17 +50,43 @@ class CfgPatches
 class CfgVehicles
 {
     class 43cdo_units_soldier_base;
-    class 43cdo_soldier_logi : 43cdo_units_soldier_base
+    class 43cdo_logistics_soldier_logi : 43cdo_units_soldier_base
     {
         scope = 2;
 		scopeCurator = 2;
 		side = 1;
         displayName = "Logi Man";
+        faction = "43cdo_faction";
         editorSubcategory = "43cdo_faction_edsubcat_playersqm";
         author = "LCpl. BT";
-        // QM will be 0 threat to the enemy
-        threat[] = {0, 0, 0};
-        value = 100000;
+        threat[] = {1, 0.1, 0.1};
+
+        attendant = 0;
+        engineer = 0;
+
+        uniform = "SCM_G4_T_uniform";
+        backpack = "";
+        weapons[] =
+        {
+            "Put",
+            "Throw"
+        };
+        respawnWeapons[] =
+        {
+            "Put",
+            "Throw"
+        };
+        linkedItems[] =
+        {
+            "SCM_Virtus_Assaulter_1_Belt",
+            "SCM_Fast_B_2"
+        };
+        respawnLinkedItems[] =
+        {
+            "SCM_Virtus_Assaulter_1_Belt",
+            "SCM_Fast_B_2"
+        };
+        
         class loadoutitems
         {
             loadedmagazineprimary[] = {};
@@ -68,7 +95,7 @@ class CfgVehicles
             itemsvest[] = {};
             itemsbackpack[] = {};
         };
-        // this is what makes the qm menu show as a scroll option on the qm
+        // this is what makes the logi menu show as a scroll option on the logi man
         class UserActions
         {
             class 43cdo_logistics_menu_open
@@ -107,7 +134,7 @@ class CfgVehicles
 		mapSize = 2;		
 		class EventHandlers
 		{
-			init = "(_this select 0) setVariable ['hasObject', false, true]; _trigger = (_this select 0); _trigger setTriggerArea [2, 2, 0, false]; _trigger setTriggerActivation ['ANY', 'PRESENT', true]; _trigger setTriggerStatements ['count (thisList select {_x != thisTrigger}) > 0', 'thisTrigger setVariable [""hasObject"", true, true]', 'thisTrigger setVariable [""hasObject"", false, true]'];";
+			init = "(_this select 0) setVariable ['hasObject', false, true]; _trigger = (_this select 0); _trigger setTriggerArea [0.5, 0.5, 0, true, 1]; _trigger setTriggerActivation ['ANY', 'PRESENT', true]; _trigger setTriggerStatements ['count (thisList select {_x != thisTrigger}) > 0', 'thisTrigger setVariable [""hasObject"", true, true]', 'thisTrigger setVariable [""hasObject"", false, true]'];";
 		};
 	}
     class NATO_Box_Base;
@@ -128,7 +155,7 @@ class CfgVehicles
         mapSize = 2;
         transportMaxWeapons = 10;
         transportMaxMagazines = 50;
-        transportMaxItems = 30;
+        transportMaxItems = 50;
     };
     class 43cdo_logistics_box_example : 43cdo_logistics_box_base
     {
