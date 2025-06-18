@@ -15,7 +15,7 @@ class 43cdo_units_soldier_31marksman : 43cdo_units_soldier_base
     backpack = "SCM_AVS_1000";
     weapons[] =
     {
-        "UKSF_L129A2_65_Base",
+        "43cdo_weapons_l129a2",
         "rhsusf_weap_glock17g4",
         "Put",
         "Throw",
@@ -23,7 +23,7 @@ class 43cdo_units_soldier_31marksman : 43cdo_units_soldier_base
     };
     respawnWeapons[] =
     {
-        "UKSF_L129A2_65_Base",
+        "43cdo_weapons_l129a2",
         "rhsusf_weap_glock17g4",
         "Put",
         "Throw",

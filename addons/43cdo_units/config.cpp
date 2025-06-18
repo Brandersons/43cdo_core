@@ -107,6 +107,11 @@ class CfgVehicles
                 {_unit addItemToUniform _x;} forEach getArray (configFile >> 'CfgVehicles' >> typeOf _unit >> 'loadoutitems' >> 'itemsuniform'); \
                 {_unit addItemToVest _x;} forEach getArray (configFile >> 'CfgVehicles' >> typeOf _unit >> 'loadoutitems' >> 'itemsvest'); \
                 {_unit addItemToBackpack _x;} forEach getArray (configFile >> 'CfgVehicles' >> typeOf _unit >> 'loadoutitems' >> 'itemsbackpack'); \
+                _unit setVariable ['kitname', getText (configFile >> 'CfgVehicles' >> typeOf _unit >> 'displayName')];\
+            ";
+            respawn = "\
+                private _unit = _this select 0; \
+                _unit setUnitLoadout (player getVariable ['ENH_SavedLoadout', []]); \
             ";
         };
     };

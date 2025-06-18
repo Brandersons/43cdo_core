@@ -5,19 +5,25 @@ class CfgPatches
     class 43cdo_qm
     {
         name = "43cdo_qm";
-        units[] = {
-            "43cdo_soldier_qm"
+        units[] =
+        {
+            "43cdo_qm_soldier_qm"
         };
-        weapons[] = {
+        weapons[] =
+        {
             "SCM_Virtus_Assaulter_1_Belt",
             "SCM_Fast_B_2"
         };
         requiredVersion = 0.1;
         addonRootClass = "43cdo_core";
-        requiredAddons[] = {
+        requiredAddons[] =
+        {
             "43cdo_core",
             "43cdo_units",
-            "A3_Characters_F"
+            "A3_Characters_F",
+            "SCM_Virtus",
+            "SCM_Fast",
+            "SCM_Uniforms"
         };
     };
 };
@@ -25,15 +31,43 @@ class CfgPatches
 class CfgVehicles
 {   
     class 43cdo_units_soldier_base;
-    class 43cdo_soldier_qm : 43cdo_units_soldier_base
+    class 43cdo_qm_soldier_qm : 43cdo_units_soldier_base
     {
         scope = 2;
+        scopeCurator = 2;
+        side = 1;
         displayName = "Quartermaster";
+        faction = "43cdo_faction";
         editorSubcategory = "43cdo_faction_edsubcat_playersqm";
         author = "LCpl. BT";
-        // QM will be 0 threat to the enemy
-        threat[] = {0, 0, 0};
-        value = 100000;
+        threat[] = {1, 0.1, 0.1};
+
+        attendant = 0;
+        engineer = 0;
+
+        uniform = "SCM_G4_T_uniform";
+        backpack = "";
+        weapons[] =
+        {
+            "Put",
+            "Throw"
+        };
+        respawnWeapons[] =
+        {
+            "Put",
+            "Throw"
+        };
+        linkedItems[] =
+        {
+            "SCM_Virtus_Assaulter_1_Belt",
+            "SCM_Fast_B_2"
+        };
+        respawnLinkedItems[] =
+        {
+            "SCM_Virtus_Assaulter_1_Belt",
+            "SCM_Fast_B_2"
+        };
+        
         class loadoutitems
         {
             loadedmagazineprimary[] = {};

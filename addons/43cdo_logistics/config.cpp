@@ -8,7 +8,7 @@ class CfgPatches
 		author="LCpl. BT";
         url="";
         addonRootClass = "43cdo_core";
-		requiredAddons[]= 
+		requiredAddons[]=
 		{
 		    "43cdo_core",
             "A3_Data_F_Loadorder",
@@ -26,7 +26,8 @@ class CfgPatches
 		requiredVersion= 0.01;
 		units[]=
         {
-            "43cdo_logistics_box_suppliesinfantry",
+			"43cdo_logistics_spawnpos",
+			"43cdo_logistics_box_suppliesinfantry",
             "43cdo_logistics_box_suppliesrecce",
             "43cdo_logistics_box_suppliesmss",
             "43cdo_logistics_box_launchersnlaw",
@@ -51,6 +52,8 @@ class CfgVehicles
     class 43cdo_soldier_logi : 43cdo_units_soldier_base
     {
         scope = 2;
+		scopeCurator = 2;
+		side = 1;
         displayName = "Logi Man";
         editorSubcategory = "43cdo_faction_edsubcat_playersqm";
         author = "LCpl. BT";

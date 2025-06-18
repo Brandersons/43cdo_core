@@ -5,7 +5,7 @@ class 43cdo_units_soldier_31pointman : 43cdo_units_soldier_base
     side = 1;
     displayName = "Pointman";
     editorSubcategory = "43cdo_faction_edsubcat_playersqm";
-    aauthor = "Cpl. N. Monarch";
+    author = "Cpl. N. Monarch";
     threat[] = {1, 0.1, 0.1};
 
     attendant = 0;

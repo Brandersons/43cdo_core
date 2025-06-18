@@ -203,8 +203,7 @@ class 43cdo_qm_menu_dialog
                 _loadoutsList = _display displayCtrl 1501;\
                 _selectedLoadout = _loadoutsList lbData (lbCurSel _loadoutsList);\
                 if (_selectedLoadout != '') then {\
-                    player setVariable ['43cdo_qm_savedloadout', _selectedLoadout, true];\
-                    player setVariable ['lastloadedkit', getText (configFile >> 'CfgVehicles' >> _selectedLoadout >> 'displayName')];\
+                    player setVariable ['kitname', getText (configFile >> 'CfgVehicles' >> _selectedLoadout >> 'displayName')];\
                     _playerFacewear = goggles player;\
                     player setUnitLoadout (configFile >> 'EmptyLoadout');\
                     player setUnitLoadout (configFile >> 'CfgVehicles' >> _selectedLoadout);\
@@ -215,10 +214,11 @@ class 43cdo_qm_menu_dialog
                     { player addPrimaryWeaponItem _x; } forEach getArray (configFile >> 'CfgVehicles' >> _selectedLoadout >> 'loadoutitems' >> 'loadedmagazineprimary');\
                     { player addHandgunItem _x; } forEach getArray (configFile >> 'CfgVehicles' >> _selectedLoadout >> 'loadoutitems' >> 'loadedmagazinesecondary');\
                     if (_playerFacewear != '') then { player addGoggles _playerFacewear; };\
-                    private _medicLevel = getNumber (configFile >> 'CfgVehicles' >> _selectedLoadout >> 'attendant');\
-                    private _engineerLevel = getNumber (configFile >> 'CfgVehicles' >> _selectedLoadout >> 'engineer');\
-                    player setVariable ['ace_medical_medicclass', _medicLevel, true];\
-                    player setVariable ['ACE_IsEngineer', _engineerLevel, true];\
+                    private _attendant = getNumber (configFile >> 'CfgVehicles' >> _selectedLoadout >> 'attendant');\
+                    player setVariable ['ace_medical_medicclass', _attendant, true];\
+                    private _engineer = getNumber (configFile >> 'CfgVehicles' >> _selectedLoadout >> 'engineer');\
+                    player setVariable ['ACE_IsEngineer', _engineer, true];\
+                    player setVariable ['ENH_SavedLoadout', getUnitLoadout player, true]; \
                     ['TaskSucceeded', ['', format['%1 Loadout Applied', getText (configFile >> 'CfgVehicles' >> _selectedLoadout >> 'displayName')]]] call BIS_fnc_showNotification;\
                 } else {\
                     ['TaskSucceeded', ['', 'No loadout selected!']] call BIS_fnc_showNotification;\
@@ -252,14 +252,8 @@ class 43cdo_qm_menu_dialog
             w = 0.073393 * safezoneW;
             h = 0.055 * safezoneH;
             action = "[] spawn {\
-                if (KitSaved isEqualTo false) then {\
-                    ['TaskFailed', ['You do not have a saved kit']] call BIS_fnc_showNotification;\
-                } else {\
-                    player setUnitLoadout (player getVariable ['Saved_Loadout',[]]);\
-                    player setVariable ['ace_medical_medicclass', trainingmedic, true];\
-                    player setVariable ['ACE_IsEngineer', trainingengineer, true];\
-                    ['TaskSucceeded', ['', format['%1 kit loaded!', player getVariable ['kitname', 'Unknown']]]] call BIS_fnc_showNotification;\
-                };\
+                player setUnitLoadout (player getVariable ['ENH_SavedLoadout', []]); \
+                ['TaskSucceeded', ['', format['%1 kit restored!', player getVariable ['kitname', 'Unknown']]]] call BIS_fnc_showNotification;\
             };";
         };
         
@@ -273,20 +267,9 @@ class 43cdo_qm_menu_dialog
             w = 0.073393 * safezoneW;
             h = 0.055 * safezoneH;
             action = "[] spawn { \
-                _display = findDisplay 4300; \
-                _loadoutsList = _display displayCtrl 1501; \
-                _selectedLoadout = _loadoutsList lbData (lbCurSel _loadoutsList); \
-                if (_selectedLoadout != '') then { \
-                    player setVariable ['Saved_Loadout',getUnitLoadout player]; \
-                    player setVariable ['kitname', player getVariable 'lastloadedkit']; \
-                    trainingmedic = player getVariable 'ace_medical_medicclass'; \
-                    trainingengineer = player getVariable 'ACE_IsEngineer'; \
-                    KitSaved = true; \
-                    ['TaskSucceeded', ['', format['%1 Loadout Saved', player getVariable 'lastloadedkit']]] call BIS_fnc_showNotification; \
-                } else { \
-                    player setVariable ['Saved_Loadout',getUnitLoadout player]; \
-                    ['TaskSucceeded', ['', 'Current Loadout Saved!']] call BIS_fnc_showNotification; \
-                }; \
+                private _playerkitname = player getVariable ['kitname', 'Unknown']; \
+                player setVariable ['ENH_SavedLoadout', getUnitLoadout player, true]; \
+                ['TaskSucceeded', ['', format['%1 Loadout Saved', _playerkitname]]] call BIS_fnc_showNotification; \
             };";
         };
         
