@@ -59,9 +59,9 @@ class 43cdo_qm_loadoutfilters
         // for each section, put the classnames of the soldiers that should be shown in that section
         // the loadouts will show in the order which you place them in here
         // you can add and remove sections by removing both their entry above and the filter below, just make sure the indexes of the filters match up
-        class 43cdo_qm_loadoutfilter_12hq { classes[] = {"43cdo_units_soldier_12hq", "43cdo_units_soldier_12sig"}; };
-        class 43cdo_qm_loadoutfilter_12cd { classes[] = {"43cdo_units_soldier_12c", "43cdo_units_soldier_12d", "43cdo_units_soldier_12cdmarine", "43cdo_units_soldier_12marksman", "43cdo_units_soldier_12sig"}; };
-        class 43cdo_qm_loadoutfilter_31hq { classes[] = {"43cdo_units_soldier_31hqa", "43cdo_units_soldier_31hqb", "43cdo_units_soldier_31sig"}; };
+        class 43cdo_qm_loadoutfilter_12hq { classes[] = {"43cdo_units_soldier_12a", "43cdo_units_soldier_12b", "43cdo_units_soldier_12sig"}; };
+        class 43cdo_qm_loadoutfilter_12cd { classes[] = {"43cdo_units_soldier_12c", "43cdo_units_soldier_12d", "43cdo_units_soldier_12marine", "43cdo_units_soldier_12marksman", "43cdo_units_soldier_12sig"}; };
+        class 43cdo_qm_loadoutfilter_31hq { classes[] = {"43cdo_units_soldier_31a", "43cdo_units_soldier_31b", "43cdo_units_soldier_31sig"}; };
         class 43cdo_qm_loadoutfilter_31troop { classes[] = {"43cdo_units_soldier_311ic", "43cdo_units_soldier_312ic", "43cdo_units_soldier_31pointman", "43cdo_units_soldier_31medic", "43cdo_units_soldier_31marine"}; };
         class 43cdo_qm_loadoutfilter_31mss { classes[] = {"43cdo_units_soldier_311ic", "43cdo_units_soldier_312ic", "43cdo_units_soldier_31gpmg", "43cdo_units_soldier_31marksman", "43cdo_units_soldier_31medic"}; };
         class 43cdo_qm_loadoutfilter_misc { classes[] = {"43cdo_units_soldier_31marine", "43cdo_units_soldier_31gpmg", "43cdo_units_soldier_31marksman", "43cdo_units_soldier_31medic", "43cdo_units_soldier_31pointman"}; };

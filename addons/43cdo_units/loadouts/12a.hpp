@@ -1,9 +1,9 @@
-class 43cdo_units_soldier_12hq : 43cdo_units_soldier_base
+class 43cdo_units_soldier_12a : 43cdo_units_soldier_base
 {
     scope = 2;
     scopeCurator = 2;
     side = 1;
-    displayName = "1-2 HQ";
+    displayName = "1-2 Alpha";
     editorSubcategory = "43cdo_faction_edsubcat_playersqm";
     author = "Cpl. N. Monarch";
     threat[] = {1, 0.1, 0.1};

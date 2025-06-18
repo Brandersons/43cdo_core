@@ -1,4 +1,4 @@
-class 43cdo_units_soldier_12cdmarine : 43cdo_units_soldier_base
+class 43cdo_units_soldier_12marine : 43cdo_units_soldier_base
 {
     scope = 2;
     scopeCurator = 2;

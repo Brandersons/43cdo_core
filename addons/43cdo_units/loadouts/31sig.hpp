@@ -3,7 +3,7 @@ class 43cdo_units_soldier_31sig : 43cdo_units_soldier_base
     scope = 2;
     scopeCurator = 2;
     side = 1;
-    displayName = "3-1 Sig";
+    displayName = "3-1 Signaller";
     editorSubcategory = "43cdo_faction_edsubcat_playersqm";
     author = "Cpl. Monarch";
     threat[] = {1, 0.1, 0.1};

@@ -6,15 +6,16 @@ class CfgPatches
         // if you want a unit to show up in zeus you've gotta add it here
         units[] =
         {
-            "43cdo_units_soldier_12charlie",
-            "43cdo_units_soldier_12delta",
-            "43cdo_units_soldier_12hq",
+            "43cdo_units_soldier_12a",
+            "43cdo_units_soldier_12b",
+            "43cdo_units_soldier_12c",
+            "43cdo_units_soldier_12d",
             "43cdo_units_soldier_12marine",
             "43cdo_units_soldier_12marksman",
             "43cdo_units_soldier_12sig",
+            "43cdo_units_soldier_31a",
+            "43cdo_units_soldier_31b",
             "43cdo_units_soldier_31gpmg",
-            "43cdo_units_soldier_31hqa",
-            "43cdo_units_soldier_31hqb",
             "43cdo_units_soldier_31marine",
             "43cdo_units_soldier_31marksman",
             "43cdo_units_soldier_31medic",
@@ -260,15 +261,16 @@ class CfgVehicles
     };
 
     // player loadouts
-    #include "\43cdo_units\loadouts\12charlie.hpp"
-    #include "\43cdo_units\loadouts\12delta.hpp"
-    #include "\43cdo_units\loadouts\12hq.hpp"
+    #include "\43cdo_units\loadouts\12a.hpp"
+    #include "\43cdo_units\loadouts\12b.hpp"
+    #include "\43cdo_units\loadouts\12c.hpp"
+    #include "\43cdo_units\loadouts\12d.hpp"
     #include "\43cdo_units\loadouts\12marine.hpp"
     #include "\43cdo_units\loadouts\12marksman.hpp"
     #include "\43cdo_units\loadouts\12sig.hpp"
+    #include "\43cdo_units\loadouts\31a.hpp"
+    #include "\43cdo_units\loadouts\31b.hpp"
     #include "\43cdo_units\loadouts\31gpmg.hpp"
-    #include "\43cdo_units\loadouts\31hqa.hpp"
-    #include "\43cdo_units\loadouts\31hqb.hpp"
     #include "\43cdo_units\loadouts\31marine.hpp"
     #include "\43cdo_units\loadouts\31marksman.hpp"
     #include "\43cdo_units\loadouts\31medic.hpp"
@@ -342,6 +344,123 @@ class CfgGroups {
                 name = "Infantry";
                 // below here is where you set up the groups and the soldiers in them
                 // remember that arrays start at 0, not 1
+                class 43cdo_faction_group_12ab
+                {
+                    name = "1-2 A/B";
+                    faction = "43cdo_faction";
+                    editorCategory = "43cdo_faction_edcat";
+			        editorSubcategory = "43cdo_faction_edsubcat_infantry";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    side = 1;
+                    scope = 2;
+
+                    class Unit0
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_12a";
+                        rank = "LIEUTENANT";
+                        position[] = {0, 0, 0};
+                    };
+                    class Unit1
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_12b";
+                        rank = "SERGEANT";
+                        position[] = {0,-2,0};
+                    };
+                    class Unit2
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_12sig";
+                        rank = "CORPORAL";
+                        position[] = {0,-4,0};
+                    };
+                    class Unit3
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31marine";
+                        rank = "PRIVATE";
+                        position[] = {0,-6,0};
+                    };
+                };
+                class 43cdo_faction_group_12cd
+                {
+                    name = "1-2 C/D";
+                    faction = "43cdo_faction";
+                    editorCategory = "43cdo_faction_edcat";
+			        editorSubcategory = "43cdo_faction_edsubcat_infantry";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    side = 1;
+                    scope = 2;
+
+                    class Unit0
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_12c";
+                        rank = "SERGEANT";
+                        position[] = {0, 0, 0};
+                    };
+                    class Unit1
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_12marine";
+                        rank = "PRIVATE";
+                        position[] = {0,-2,0};
+                    };
+                    class Unit2
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_12d";
+                        rank = "CORPORAL";
+                        position[] = {0,-4,0};
+                    };
+                    class Unit3
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31marine";
+                        rank = "PRIVATE";
+                        position[] = {0,-6,0};
+                    };
+                };
+                class 43cdo_faction_group_31ab
+                {
+                    name = "3-1 A/B";
+                    faction = "43cdo_faction";
+                    editorCategory = "43cdo_faction_edcat";
+			        editorSubcategory = "43cdo_faction_edsubcat_infantry";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    side = 1;
+                    scope = 2;
+
+                    class Unit0
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31a";
+                        rank = "LIEUTENANT";
+                        position[] = {0, 0, 0};
+                    };
+                    class Unit1
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31b";
+                        rank = "SERGEANT";
+                        position[] = {0,-2,0};
+                    };
+                    class Unit2
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31sig";
+                        rank = "CORPORAL";
+                        position[] = {0,-4,0};
+                    };
+                    class Unit3
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31medic";
+                        rank = "PRIVATE";
+                        position[] = {0,-6,0};
+                    };
+                };
                 class 43cdo_faction_group_31cd
                 {
                     name = "3-1 C/D";
@@ -376,21 +495,127 @@ class CfgGroups {
                     class Unit3
                     {
                         side = 1;
-                        vehicle = "43cdo_units_soldier_311ic";
+                        vehicle = "43cdo_units_soldier_312ic";
                         rank = "CORPORAL";
                         position[] = {0,-6,0};
                     };
                     class Unit4
                     {
                         side = 1;
-                        vehicle = "43cdo_units_soldier_31medic";
+                        vehicle = "43cdo_units_soldier_31marine";
                         rank = "PRIVATE";
                         position[] = {0,-8,0};
                     };
                     class Unit5
                     {
                         side = 1;
+                        vehicle = "43cdo_units_soldier_31medic";
+                        rank = "PRIVATE";
+                        position[] = {0,-10,0};
+                    };
+                };
+                class 43cdo_faction_group_31ef
+                {
+                    name = "3-1 E/F";
+                    faction = "43cdo_faction";
+                    editorCategory = "43cdo_faction_edcat";
+			        editorSubcategory = "43cdo_faction_edsubcat_infantry";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    side = 1;
+                    scope = 2;
+
+                    class Unit0
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_311ic";
+                        rank = "SERGEANT";
+                        position[] = {0, 0, 0};
+                    };
+                    class Unit1
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31pointman";
+                        rank = "PRIVATE";
+                        position[] = {0,-2,0};
+                    };
+                    class Unit2
+                    {
+                        side = 1;
                         vehicle = "43cdo_units_soldier_31marine";
+                        rank = "PRIVATE";
+                        position[] = {0,-4,0};
+                    };
+                    class Unit3
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_312ic";
+                        rank = "CORPORAL";
+                        position[] = {0,-6,0};
+                    };
+                    class Unit4
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31marine";
+                        rank = "PRIVATE";
+                        position[] = {0,-8,0};
+                    };
+                    class Unit5
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31medic";
+                        rank = "PRIVATE";
+                        position[] = {0,-10,0};
+                    };
+                };
+                class 43cdo_faction_group_31ij
+                {
+                    name = "3-1 I/J";
+                    faction = "43cdo_faction";
+                    editorCategory = "43cdo_faction_edcat";
+			        editorSubcategory = "43cdo_faction_edsubcat_infantry";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    side = 1;
+                    scope = 2;
+
+                    class Unit0
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_311ic";
+                        rank = "SERGEANT";
+                        position[] = {0, 0, 0};
+                    };
+                    class Unit1
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31gpmg";
+                        rank = "PRIVATE";
+                        position[] = {0,-2,0};
+                    };
+                    class Unit2
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31gpmg";
+                        rank = "PRIVATE";
+                        position[] = {0,-4,0};
+                    };
+                    class Unit3
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_312ic";
+                        rank = "PRIVATE";
+                        position[] = {0,-6,0};
+                    };
+                    class Unit4
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31marksman";
+                        rank = "PRIVATE";
+                        position[] = {0,-8,0};
+                    };
+                    class Unit5
+                    {
+                        side = 1;
+                        vehicle = "43cdo_units_soldier_31medic";
                         rank = "PRIVATE";
                         position[] = {0,-10,0};
                     };
