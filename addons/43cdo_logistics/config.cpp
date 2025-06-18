@@ -55,7 +55,7 @@ class CfgVehicles
         scope = 2;
 		scopeCurator = 2;
 		side = 1;
-        displayName = "Logi Man";
+        displayName = "Logistics Officer";
         faction = "43cdo_faction";
         editorSubcategory = "43cdo_faction_edsubcat_playersqm";
         author = "LCpl. BT";

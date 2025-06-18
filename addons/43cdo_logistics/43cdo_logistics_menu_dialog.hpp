@@ -53,16 +53,16 @@ class Default
 class 43cdo_logistics_supplyfilters
 {
     // this is where the text strings for the sections are stored, their order MUST match the filters below
-    sections[] = {"1-2 HQ", "Recce", "Misc", "Test"};
+    sections[] = {"Section Supplies", "Launchers", "Specialist Equipment", "Health & Nutrition"};
     class filters
     {
         // for each section, put the classnames of the soldiers that should be shown in that section
         // the loadouts will show in the order which you place them in here
         // you can add and remove sections by removing both their entry above and the filter below, just make sure the indexes of the filters match up
-        class 43cdo_logistics_supplyfilter_12hq { classes[] = {""}; };
-        class 43cdo_logistics_supplyfilter_recce { classes[] = {"43cdo_logistics_box_suppliesrecce", "43cdo_logistics_box_launchersnlaw", "43cdo_logistics_box_medical", "43cdo_logistics_box_demo", "43cdo_logistics_box_breaching"}; };
-        class 43cdo_logistics_supplyfilter_misc { classes[] = {"43cdo_logistics_box_medical"}; };
-        class 43cdo_logistics_supplyfilter_test { classes[] = {"43cdo_logistics_box_medical", "43cdo_logistics_box_demo", "43cdo_logistics_box_breaching"}; };
+        class 43cdo_logistics_supplyfilter_section { classes[] = {"43cdo_logistics_box_suppliesinfantry", "43cdo_logistics_box_suppliesrecce", "43cdo_logistics_box_suppliesmss"}; };
+        class 43cdo_logistics_supplyfilter_launchers { classes[] = {"43cdo_logistics_box_launchersnlaw", "43cdo_logistics_box_launchersilaw", "43cdo_logistics_box_launchersasm"}; };
+        class 43cdo_logistics_supplyfilter_specialist { classes[] = {"43cdo_logistics_box_sniperrifle", "43cdo_logistics_box_wirecutter", "43cdo_logistics_box_flashbang", "43cdo_logistics_box_demo", "43cdo_logistics_box_breaching"}; };
+        class 43cdo_logistics_supplyfilter_hmedical { classes[] = {"43cdo_logistics_box_medical", "43cdo_logistics_box_ration"}; };
     };
 };
 
