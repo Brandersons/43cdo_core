@@ -1,0 +1,6 @@
+Wish list
+-Map propagation through bTab, it'd be nice for signallers to be able to transmit map data
+-Custom husky textures
+-Custom heli textures and limited pylon loadouts
+-Reorganise coyote configs into .hpp files
+-Fix NPC loadouts
